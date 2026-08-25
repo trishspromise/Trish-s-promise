@@ -258,3 +258,32 @@ textarea{min-height:112px;resize:vertical}
     grid-template-columns:1fr;
   }
 }
+
+.card-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  justify-content:center;
+}
+.small-btn-outline{
+  background:white;
+  color:var(--coral2);
+  border:2px solid var(--coral);
+  padding:8px 13px;
+}
+.support-strip-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:flex-end;
+}
+@media(max-width:600px){
+  .support-strip-actions{
+    width:100%;
+    justify-content:flex-start;
+  }
+  .support-strip-actions a{
+    width:100%;
+    text-align:center;
+  }
+}
