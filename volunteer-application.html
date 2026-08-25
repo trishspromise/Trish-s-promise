@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Volunteer Application | Trish's Promise</title>
+<meta name="description" content="Apply to volunteer with Trish's Promise Animal Rescue.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="trishs-promise-logo.jpg" alt="Trish's Promise Animal Rescue logo">
+      <span class="brand-copy"><strong>Trish's<br>Promise</strong><span>ANIMAL RESCUE</span></span>
+    </a>
+    <a class="backhome" href="index.html">← Home</a>
+  </div>
+</header>
+
+<section class="form-hero">
+  <div class="container">
+    <p class="eyebrow">Trish's Promise Animal Rescue</p>
+    <h1 style="font-size:clamp(2.7rem,6vw,4.8rem)">Volunteer Application</h1>
+    <p class="lead">Thank you for offering your time and talents to help animals in need.</p>
+  </div>
+</section>
+
+<main class="form-shell">
+<form class="form-card" id="volunteerForm">
+  <div class="progress"><span></span></div>
+
+  <div class="notice">
+    <strong>Every volunteer makes a difference.</strong>
+    Tell us what you are comfortable helping with and when you are generally available. We will contact you when there is a good match for a rescue need.
+  </div>
+
+  <section class="form-section">
+    <h2>🐾 Your Information</h2>
+    <div class="form-grid">
+      <div class="field"><label>Full Name *</label><input name="Full Name" required></div>
+      <div class="field"><label>Date of Birth *</label><input type="date" name="Date of Birth" required></div>
+      <div class="field"><label>Email Address *</label><input type="email" name="Email" required></div>
+      <div class="field"><label>Phone Number *</label><input type="tel" name="Phone" required></div>
+      <div class="field full"><label>City / State *</label><input name="City and State" placeholder="Example: Saint Albans, WV" required></div>
+      <div class="field full"><label>Emergency Contact Name & Phone</label><input name="Emergency Contact"></div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>♥ How Would You Like to Help?</h2>
+    <div class="form-grid">
+      <div class="field full">
+        <label>Select all areas that interest you:</label>
+        <div class="checkbox-line"><input type="checkbox" name="Volunteer Interest" value="Animal transport"><label>Animal transport / vet appointments</label></div>
+        <div class="checkbox-line"><input type="checkbox" name="Volunteer Interest" value="Adoption events"><label>Adoption events</label></div>
+        <div class="checkbox-line"><input type="checkbox" name="Volunteer Interest" value="Supply pickup and delivery"><label>Supply pickup / delivery</label></div>
+        <div class="checkbox-line"><input type="checkbox" name="Volunteer Interest" value="Animal care"><label>Hands-on animal care / cleaning</label></div>
+        <div class="checkbox-line"><input type="checkbox" name="Volunteer Interest" value="Photography"><label>Animal photography</label></div>
+        <div class="checkbox-line"><input type="checkbox" name="Volunteer Interest" value="Social media and outreach"><label>Social media / community outreach</label></div>
+        <div class="checkbox-line"><input type="checkbox" name="Volunteer Interest" value="Fundraising"><label>Fundraising</label></div>
+        <div class="checkbox-line"><input type="checkbox" name="Volunteer Interest" value="Administrative help"><label>Administrative / organizational help</label></div>
+        <div class="checkbox-line"><input type="checkbox" name="Volunteer Interest" value="Other"><label>Other</label></div>
+      </div>
+
+      <div class="field full">
+        <label>Tell us about any skills, experience, or other ways you would like to help.</label>
+        <textarea name="Skills and Experience" placeholder="Animal experience, photography, event work, social media, fundraising, organizing, etc."></textarea>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>📅 Availability</h2>
+    <div class="form-grid">
+      <div class="field full">
+        <label>What days and times are you generally available? *</label>
+        <textarea name="Availability" placeholder="Example: Weekday evenings, Saturdays, flexible for occasional transport" required></textarea>
+      </div>
+      <div class="field"><label>How often would you like to volunteer?</label>
+        <select name="Frequency">
+          <option></option>
+          <option>As needed</option>
+          <option>A few times a month</option>
+          <option>About once a week</option>
+          <option>More than once a week</option>
+          <option>Special events only</option>
+        </select>
+      </div>
+      <div class="field"><label>How far are you comfortable traveling?</label>
+        <select name="Travel Distance">
+          <option></option>
+          <option>Local area only</option>
+          <option>Up to 15 miles</option>
+          <option>Up to 30 miles</option>
+          <option>Up to 60 miles</option>
+          <option>Flexible / depends on need</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>🚗 Transportation</h2>
+    <div class="form-grid">
+      <div class="field"><label>Do you have reliable transportation? *</label>
+        <select name="Reliable Transportation" required>
+          <option></option><option>Yes</option><option>No</option>
+        </select>
+      </div>
+      <div class="field"><label>Are you willing to transport animals?</label>
+        <select name="Animal Transport">
+          <option></option><option>Yes</option><option>No</option><option>Sometimes</option>
+        </select>
+      </div>
+      <div class="field"><label>Valid driver's license?</label>
+        <select name="Valid Drivers License">
+          <option></option><option>Yes</option><option>No</option><option>Not applicable</option>
+        </select>
+      </div>
+      <div class="field"><label>Current auto insurance?</label>
+        <select name="Auto Insurance">
+          <option></option><option>Yes</option><option>No</option><option>Not applicable</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>🐶 Animals & Safety</h2>
+    <div class="form-grid">
+      <div class="field full"><label>Tell us about your experience with dogs, cats, or other animals.</label><textarea name="Animal Experience"></textarea></div>
+      <div class="field"><label>Comfortable around dogs?</label><select name="Comfortable with Dogs"><option></option><option>Yes</option><option>No</option><option>Depends on the dog</option></select></div>
+      <div class="field"><label>Comfortable around cats?</label><select name="Comfortable with Cats"><option></option><option>Yes</option><option>No</option><option>Depends on the cat</option></select></div>
+      <div class="field full"><label>Do you have any allergies, physical limitations, or safety concerns we should know about?</label><textarea name="Limitations or Safety Concerns"></textarea></div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>✓ Volunteer Agreement</h2>
+    <div class="form-grid">
+      <div class="field full checkbox-line">
+        <input type="checkbox" name="Accuracy Agreement" value="Agreed" required>
+        <label>I certify that the information in this application is accurate to the best of my knowledge. *</label>
+      </div>
+      <div class="field full checkbox-line">
+        <input type="checkbox" name="Safety Agreement" value="Agreed" required>
+        <label>I agree to follow Trish's Promise instructions and safety rules while volunteering and understand that volunteer assignments are based on current rescue needs. *</label>
+      </div>
+      <div class="field full checkbox-line">
+        <input type="checkbox" name="Minor Acknowledgment" value="Agreed">
+        <label>If I am under 18, I understand that parent/guardian permission and adult supervision may be required before I can volunteer.</label>
+      </div>
+    </div>
+  </section>
+
+  <button class="submit" type="submit">Submit Volunteer Application →</button>
+  <p class="form-note">Your email app will open with your completed answers addressed to Trish's Promise. Tap Send to finish submitting.</p>
+</form>
+</main>
+
+<script>
+document.getElementById('volunteerForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const fd = new FormData(this);
+  const grouped = {};
+  for (const [k,v] of fd.entries()) {
+    if (!String(v).trim()) continue;
+    if (!grouped[k]) grouped[k] = [];
+    grouped[k].push(v);
+  }
+  const lines = [];
+  for (const [k, values] of Object.entries(grouped)) {
+    lines.push(k + ': ' + values.join(', '));
+  }
+  location.href = 'mailto:trishspromiseanimalrescue@gmail.com?subject='
+    + encodeURIComponent("Trish's Promise Volunteer Application")
+    + '&body=' + encodeURIComponent(lines.join('\n'));
+});
+</script>
+
+</body>
+</html>
