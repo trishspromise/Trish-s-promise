@@ -1,42 +1,59 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Foster Application | Trish's Promise</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><a class="brand" href="index.html"><img src="trishs-promise-logo.jpg">Trish's Promise</a><a class="home" href="index.html">Home</a></header>
-<div class="hero"><div class="wrap"><div class="eyebrow">Trish's Promise</div><h1>Foster Application</h1><p>Open your home temporarily and help an animal move toward a permanent family.</p></div></div>
-<main class="wrap"><div class="card">
-<form id="fosterForm">
-<div class="note"><b>Foster application:</b> Completing this form does not guarantee approval or placement of a particular animal.</div>
-<section class="formsec"><h2>Applicant Information</h2><div class="grid">
-<div class="field"><label>Full name *</label><input name="Full Name" required></div>
-<div class="field"><label>Date of birth *</label><input type="date" name="Date of Birth" required></div>
-<div class="field full"><label>Street address *</label><input name="Street Address" required></div>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Foster Application | Trish's Promise</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="site-header"><div class="container navbar"><a class="brand" href="index.html"><img src="trishs-promise-logo.jpg" alt=""><span class="brand-copy"><strong>Trish's<br>Promise</strong><span>ANIMAL RESCUE</span></span></a><a class="backhome" href="index.html">← Home</a></div></header>
+<section class="form-hero"><div class="container"><p class="eyebrow">Trish's Promise Animal Rescue</p><h1 style="font-size:clamp(2.7rem,6vw,4.8rem)">Foster Application</h1><p class="lead">Thank you for opening your home to an animal in need.</p></div></section>
+<main class="form-shell"><form class="form-card" id="fosterForm">
+<div class="progress"><span></span></div>
+<div class="notice"><strong>Please complete the application carefully.</strong> Submission does not guarantee approval or placement of a particular animal.</div>
+<section class="form-section"><h2>🐾 Your Information</h2><div class="form-grid">
+<div class="field"><label>Full Name *</label><input name="Full Name" required></div>
+<div class="field"><label>Date of Birth *</label><input type="date" name="Date of Birth" required></div>
+<div class="field"><label>Email Address *</label><input type="email" name="Email" required></div>
+<div class="field"><label>Phone Number *</label><input type="tel" name="Phone" required></div>
+<div class="field full"><label>Street Address *</label><input name="Street Address" required></div>
 <div class="field"><label>City *</label><input name="City" required></div>
-<div class="field"><label>State / ZIP *</label><input name="State / ZIP" required></div>
-<div class="field"><label>Phone *</label><input type="tel" name="Phone" required></div>
-<div class="field"><label>Email *</label><input type="email" name="Email" required></div></div></section>
-<section class="formsec"><h2>Home & Household</h2><div class="grid">
-<div class="field full"><label>Do you own, rent, or live with someone else? *</label><select name="Housing" required><option></option><option>Own</option><option>Rent</option><option>Live with family/other</option></select></div>
+<div class="field"><label>State / ZIP *</label><input name="State ZIP" value="WV " required></div>
+</div></section>
+
+<section class="form-section"><h2>⌂ Living Situation</h2><div class="form-grid">
+<div class="field"><label>Do you own or rent? *</label><select name="Housing" required><option></option><option>Own</option><option>Rent</option><option>Live with family/other</option></select></div>
+<div class="field"><label>Fenced yard?</label><select name="Fenced Yard"><option></option><option>Yes</option><option>No</option></select></div>
 <div class="field full"><label>If renting, landlord name and phone</label><input name="Landlord Information"></div>
 <div class="field full"><label>Who lives in your household? Include ages of children.</label><textarea name="Household Members"></textarea></div>
-<div class="field"><label>Hours animal would normally be alone</label><input name="Hours Alone"></div>
-<div class="field"><label>Fenced yard?</label><select name="Fenced Yard"><option></option><option>Yes</option><option>No</option></select></div>
-<div class="field full"><label>Where will the foster animal stay when nobody is home?</label><textarea name="Where Animal Stays"></textarea></div>
+<div class="field"><label>Hours animal would usually be alone</label><input name="Hours Alone"></div>
+<div class="field"><label>Where will the animal stay while nobody is home?</label><input name="Where Animal Stays"></div>
 </div></section>
-<section class="formsec"><h2>Pets & Experience</h2><div class="grid">
-<div class="field full"><label>List current pets, ages, sex, and spay/neuter status.</label><textarea name="Current Pets"></textarea></div>
-<div class="field"><label>Veterinary clinic</label><input name="Veterinary Clinic"></div>
-<div class="field"><label>Veterinary phone</label><input name="Veterinary Phone"></div>
-<div class="field full"><label>Describe your animal/foster experience.</label><textarea name="Experience"></textarea></div>
-<div class="field full"><label>What animals are you comfortable fostering?</label><textarea name="Foster Preferences" placeholder="Dogs, cats, puppies/kittens, seniors, medical cases, etc."></textarea></div>
+
+<section class="form-section"><h2>♥ Pets & Experience</h2><div class="form-grid">
+<div class="field full"><label>List current pets, including age, sex, and spay/neuter status.</label><textarea name="Current Pets"></textarea></div>
+<div class="field"><label>Veterinary Clinic</label><input name="Veterinary Clinic"></div>
+<div class="field"><label>Veterinary Phone</label><input name="Veterinary Phone"></div>
+<div class="field full"><label>Tell us about your experience with animals.</label><textarea name="Animal Experience"></textarea></div>
+</div></section>
+
+
+<section class="form-section"><h2>🐾 Foster Preferences</h2><div class="form-grid">
+<div class="field full"><label>What animals are you comfortable fostering?</label><textarea name="Foster Preferences" placeholder="Dogs, cats, puppies/kittens, seniors, medical cases, shy animals, etc."></textarea></div>
 <div class="field full"><label>Anything you cannot foster?</label><textarea name="Cannot Foster"></textarea></div>
+<div class="field"><label>Can you transport to vet appointments?</label><select name="Transport"><option></option><option>Yes</option><option>No</option><option>Sometimes</option></select></div>
+<div class="field"><label>Comfortable giving oral medication?</label><select name="Medication"><option></option><option>Yes</option><option>No</option><option>With instruction</option></select></div>
 </div></section>
-<section class="formsec"><h2>Safety & Commitment</h2><div class="grid">
-<div class="field full"><label>Have you ever surrendered, returned, or rehomed an animal? Explain if yes.</label><textarea name="Past Surrender/Rehome"></textarea></div>
+
+
+<section class="form-section"><h2>✓ Safety & Agreement</h2><div class="form-grid">
+<div class="field full"><label>Have you ever surrendered, returned, or rehomed an animal? Explain if yes.</label><textarea name="Past Surrender"></textarea></div>
 <div class="field full"><label>Has animal control or law enforcement ever removed an animal from your care? Explain if yes.</label><textarea name="Animal Control History"></textarea></div>
-<div class="field full"><label><input type="checkbox" name="Agreement" value="Agreed" required> I understand fostering is temporary, does not transfer ownership, and the animal may only be adopted through Trish's Promise. *</label></div>
+<div class="field full checkbox-line"><input type="checkbox" name="Agreement" value="Agreed" required><label>I understand fostering is temporary, does not transfer ownership, and the animal may only be adopted through Trish's Promise. *</label></div>
 </div></section>
-<p><button class="btn" type="submit">Submit Foster Application</button></p>
-<p class="small">Your email app will open with your answers filled in. Tap Send to complete the application.</p>
-</form>
-</div></main>
+<button class="submit" type="submit">Submit Foster Application →</button>
+<p class="form-note">Your email app will open with your completed answers addressed to Trish's Promise. Tap Send to finish submitting.</p>
+</form></main>
 <script>
-document.getElementById('fosterForm').addEventListener('submit',function(e){e.preventDefault();let f=new FormData(this),a=[];for(let [k,v] of f.entries())if(String(v).trim())a.push(k+': '+v);location.href='mailto:trishspromiseanimalrescue@gmail.com?subject='+encodeURIComponent("Trish's Promise Foster Application")+'&body='+encodeURIComponent(a.join('\n'));});
-</script></body></html>
+document.getElementById('fosterForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const fd=new FormData(this), lines=[];
+ for(const [k,v] of fd.entries()) if(String(v).trim()) lines.push(k+': '+v);
+ location.href='mailto:trishspromiseanimalrescue@gmail.com?subject='+encodeURIComponent("Trish's Promise Foster Application")+'&body='+encodeURIComponent(lines.join('\n'));
+});
+</script>
+</body></html>
