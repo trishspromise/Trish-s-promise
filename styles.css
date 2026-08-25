@@ -153,3 +153,108 @@ textarea{min-height:112px;resize:vertical}
   .form-card{padding:22px}
   .copyright{flex-direction:column}
 }
+
+
+/* Ways to Support page */
+.support-hero-page{
+  padding:64px 0 38px;
+  background:linear-gradient(180deg,#fff8ef,#fbe6cc);
+}
+.support-hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:42px;
+  align-items:center;
+}
+.support-hero-card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:30px;
+  box-shadow:var(--shadow);
+}
+.support-page-section{padding:58px 0}
+.support-options{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+.support-option{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+.support-option.featured{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:.65fr 1.35fr;
+  gap:28px;
+  align-items:center;
+  background:linear-gradient(135deg,#fff8ef,#fff1df);
+}
+.support-option h2{
+  font-family:Georgia,serif;
+  font-size:2rem;
+  margin-bottom:8px;
+}
+.support-option p{color:var(--muted)}
+.support-icon-big{
+  width:110px;
+  height:110px;
+  border-radius:30px;
+  background:var(--coral);
+  color:white;
+  display:grid;
+  place-items:center;
+  font-size:3rem;
+  margin:auto;
+}
+.support-link{
+  display:inline-flex;
+  margin-top:10px;
+  background:var(--coral);
+  color:white;
+  text-decoration:none;
+  border-radius:14px;
+  padding:12px 18px;
+  font-weight:900;
+}
+.support-link.outline{
+  background:white;
+  color:var(--ink);
+  border:2px solid var(--ink);
+}
+.amazon-note{
+  margin-top:12px;
+  padding:12px 14px;
+  border-radius:12px;
+  background:#fff4e8;
+  color:#6a5d56;
+  font-size:.92rem;
+}
+.support-needs{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:22px;
+}
+.need-chip{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:17px;
+  text-align:center;
+  font-weight:800;
+}
+@media(max-width:800px){
+  .support-hero-grid,
+  .support-option.featured{
+    grid-template-columns:1fr;
+  }
+  .support-options,
+  .support-needs{
+    grid-template-columns:1fr;
+  }
+}
