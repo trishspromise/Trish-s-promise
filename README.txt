@@ -8,8 +8,8 @@ Upload these three files to the ROOT of your GitHub repository:
 When GitHub asks whether to replace index.html/styles.css, replace them.
 
 BEFORE FINAL PUBLIC LAUNCH:
-- Replace YOUR_EMAIL_HERE
-- Replace ADD_FACEBOOK_LINK
+- Replace trishspromiseanimalrescue@gmail.com
+- Replace https://www.facebook.com/share/1EMmDALru8/?mibextid=wwXIfr
 - Add fundraiser details
 - Add real adoptable-animal profiles/photos
 - Update nonprofit/tax-deductibility wording once federal status changes
