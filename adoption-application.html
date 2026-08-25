@@ -1,0 +1,42 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Adoption Application | Trish's Promise</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><a class="brand" href="index.html"><img src="trishs-promise-logo.jpg">Trish's Promise</a><a class="home" href="index.html">Home</a></header>
+<div class="hero"><div class="wrap"><div class="eyebrow">Trish's Promise</div><h1>Adoption Application</h1><p>Tell us about your home and the companion you hope to welcome.</p></div></div>
+<main class="wrap"><div class="card">
+<form id="adoptionForm">
+<div class="note"><b>Adoption application:</b> Applications are reviewed to find a safe, appropriate match. Submission does not guarantee approval.</div>
+<section class="formsec"><h2>Applicant Information</h2><div class="grid">
+<div class="field"><label>Full name *</label><input name="Full Name" required></div>
+<div class="field"><label>Date of birth *</label><input type="date" name="Date of Birth" required></div>
+<div class="field full"><label>Street address *</label><input name="Street Address" required></div>
+<div class="field"><label>City *</label><input name="City" required></div>
+<div class="field"><label>State / ZIP *</label><input name="State / ZIP" required></div>
+<div class="field"><label>Phone *</label><input type="tel" name="Phone" required></div>
+<div class="field"><label>Email *</label><input type="email" name="Email" required></div></div></section>
+<section class="formsec"><h2>Animal You're Interested In</h2><div class="grid">
+<div class="field full"><label>Animal name, if known</label><input name="Animal Name"></div>
+<div class="field full"><label>Why are you interested in this animal?</label><textarea name="Why This Animal"></textarea></div></div></section>
+<section class="formsec"><h2>Your Home</h2><div class="grid">
+<div class="field full"><label>Do you own, rent, or live with someone else? *</label><select name="Housing" required><option></option><option>Own</option><option>Rent</option><option>Live with family/other</option></select></div>
+<div class="field full"><label>If renting, landlord name and phone</label><input name="Landlord Information"></div>
+<div class="field full"><label>Who lives in the home? Include ages of children.</label><textarea name="Household Members"></textarea></div>
+<div class="field"><label>Hours animal would normally be alone</label><input name="Hours Alone"></div>
+<div class="field"><label>Fenced yard?</label><select name="Fenced Yard"><option></option><option>Yes</option><option>No</option></select></div>
+<div class="field full"><label>Where will the animal stay when nobody is home?</label><textarea name="Where Animal Stays"></textarea></div></div></section>
+<section class="formsec"><h2>Pets & Veterinary Care</h2><div class="grid">
+<div class="field full"><label>List current pets, ages, sex, and spay/neuter status.</label><textarea name="Current Pets"></textarea></div>
+<div class="field"><label>Veterinary clinic</label><input name="Veterinary Clinic"></div>
+<div class="field"><label>Veterinary phone</label><input name="Veterinary Phone"></div>
+<div class="field full"><label>Tell us about pets you've had previously and what happened to them.</label><textarea name="Previous Pets"></textarea></div></div></section>
+<section class="formsec"><h2>Adoption Plan</h2><div class="grid">
+<div class="field full"><label>What qualities are you looking for in a pet?</label><textarea name="Desired Qualities"></textarea></div>
+<div class="field full"><label>What would you do if behavioral or medical issues appeared after adoption?</label><textarea name="Behavior/Medical Plan"></textarea></div>
+<div class="field full"><label>If you could no longer keep the animal, what would you do?</label><textarea name="If Unable To Keep"></textarea></div>
+<div class="field full"><label><input type="checkbox" name="Agreement" value="Agreed" required> I understand Trish's Promise may verify information and adoption is not final until approved and an adoption agreement is completed. *</label></div>
+</div></section>
+<p><button class="btn" type="submit">Submit Adoption Application</button></p>
+<p class="small">Your email app will open with your answers filled in. Tap Send to complete the application.</p>
+</form>
+</div></main>
+<script>
+document.getElementById('adoptionForm').addEventListener('submit',function(e){e.preventDefault();let f=new FormData(this),a=[];for(let [k,v] of f.entries())if(String(v).trim())a.push(k+': '+v);location.href='mailto:trishspromiseanimalrescue@gmail.com?subject='+encodeURIComponent("Trish's Promise Adoption Application")+'&body='+encodeURIComponent(a.join('\n'));});
+</script></body></html>

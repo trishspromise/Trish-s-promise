@@ -1,15 +1,12 @@
-TRISH'S PROMISE WEBSITE — VERSION 2
+UPLOAD THESE 5 FILES TO THE ROOT OF YOUR GITHUB REPOSITORY:
+index.html
+styles.css
+trishs-promise-logo.jpg
+foster-application.html
+adoption-application.html
 
-Upload these three files to the ROOT of your GitHub repository:
-- index.html
-- styles.css
-- trishs-promise-logo.jpg
+Replace index.html and styles.css when GitHub asks.
+The two application pages are new files.
 
-When GitHub asks whether to replace index.html/styles.css, replace them.
-
-BEFORE FINAL PUBLIC LAUNCH:
-- Replace trishspromiseanimalrescue@gmail.com
-- Replace https://www.facebook.com/share/1EMmDALru8/?mibextid=wwXIfr
-- Add fundraiser details
-- Add real adoptable-animal profiles/photos
-- Update nonprofit/tax-deductibility wording once federal status changes
+The application buttons open the applicant's email app with their answers filled in.
+They must tap SEND to finish submitting.
